@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section>
+        <div class="main">
+            <img src="https://www.clker.com/cliparts/D/V/i/o/J/G/lookup-png-hi.png">
+        <div class="searchbx">
+            <input type="text" name="" class="query" value="">
+            <div class="icons">
+                <div><img src="https://th.bing.com/th/id/OIP.8WvTWaXx1Htd-CV758OFYQHaHa?w=213&h=213&c=7&r=0&o=5&pid=1.7" height="50px" width="50px"></div>
+                <div><img src="https://th.bing.com/th?id=OIP.lFtxYRQ6fiHaesf9Hg0XjQHaJ-&w=215&h=290&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2" height="50px" width="50px"></div>
+            </div>
+        </div>
+        <div class="button">
+            <button class="searchBtn">LookUp for it</button>
+        </div>
+        </div>
+    </section>
+    <script>
+        let query=document.querySelector('.query');
+        let searchBtn=document.querySelector('.searchBtn');
+        searchBtn.onclick=function(){
+                let url='https://www.google.com/search?q='+ query.value;
+                window.open('url');
+        }
+    </script>
+</body>
+</html>
